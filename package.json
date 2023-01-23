@@ -24,7 +24,11 @@
   "scripts": {
     "test": "jest --verbose",
     "test:fail": "jest -t='#fail' --verbose",
-    "test:nofail": "jest -t'^((?!#fail).)*$' --verbose",
-    "test:pass": "jest -t='#pass' --verbose"
+    "test:not:fail": "jest -t='^((?!#fail).)*$' --verbose",
+    "test:pass": "jest -t='#pass' --verbose",
+    "test:unit": "jest -t='#unit' --verbose",
+    "test:integration": "jest -t='#integration' --verbose",
+    "test:e2e": "jest -t='#(unit|integration)' --verbose",
+    "test:not:e2e": "jest -u -t='^((?!#(unit|integration)).)*$' --verbose"
   }
 }
