@@ -1,0 +1,21 @@
+{
+  "name": "jest-grep-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest --verbose",
+    "test:pass": "jest -t='#pass' --verbose",
+    "test:fail": "jest -t='#fail' --verbose",
+    "test:nofail": "jest -t'^((?!#fail).)*$' --verbose"
+  },
+  "keywords": [],
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "license": "MPL-2.0",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
