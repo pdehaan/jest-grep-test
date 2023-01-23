@@ -1,21 +1,30 @@
 {
   "name": "jest-grep-test",
-  "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "author": "Peter deHaan <peter@deseloper.com>",
+  "bugs": {
+    "url": "https://github.com/pdehaan/jest-grep-test/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.3.1"
+  },
   "directories": {
     "test": "tests"
   },
+  "homepage": "https://github.com/pdehaan/jest-grep-test#readme",
+  "keywords": [],
+  "license": "MPL-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pdehaan/jest-grep-test.git"
+  },
   "scripts": {
     "test": "jest --verbose",
-    "test:pass": "jest -t='#pass' --verbose",
     "test:fail": "jest -t='#fail' --verbose",
-    "test:nofail": "jest -t'^((?!#fail).)*$' --verbose"
-  },
-  "keywords": [],
-  "author": "Peter deHaan <peter@deseloper.com>",
-  "license": "MPL-2.0",
-  "devDependencies": {
-    "jest": "^29.3.1"
+    "test:nofail": "jest -t'^((?!#fail).)*$' --verbose",
+    "test:pass": "jest -t='#pass' --verbose"
   }
 }
